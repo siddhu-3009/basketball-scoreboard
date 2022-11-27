@@ -36,6 +36,9 @@ function newGame(){
     if(scoreHome > scoreGuest){
         document.getElementById("win-message").textContent = "Home won!"
     }
+    else if(scoreHome == scoreGuest){
+        document.getElementById("win-message").textContent = "Tie!"
+    }
     else{
         document.getElementById("win-message").textContent = "Guest won!"
     }
