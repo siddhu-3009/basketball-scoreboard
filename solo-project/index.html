@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class = "home">
+                <h3>HOME</h3>
+                <p class = "score" id = "score-home">0</p>
+                <div class = "score-btn">
+                <button onclick = "add1PointHome()">+1</button>
+                <button onclick = "add2PointHome()">+2</button>
+                <button onclick = "add3PointHome()">+3</button>
+                </div>
+            </div>
+            <div class = "guest">
+                <h3>GUEST</h3>
+                <p class = "score" id = "score-guest">0</p>
+                <div class = "score-btn">
+                <button onclick = "add1PointGuest()">+1</button>
+                <button onclick = "add2PointGuest()">+2</button>
+                <button onclick = "add3PointGuest()">+3</button> 
+                </div>              
+            </div>
+        </div>
+        <button id = "new-game" onclick = "newGame()"> NEW GAME </button>
+        <p id = "win-message"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
